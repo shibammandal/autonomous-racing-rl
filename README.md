@@ -24,7 +24,7 @@ This project implements an end-to-end reinforcement learning pipeline designed t
 - **Environment:** Built on `highway-env`'s `racetrack-v0`, featuring multi-lane race circuits with multiple competing vehicles.
 - **State Representation:** 2D local Occupancy Grid (`presence`, `on_road`) aligned to vehicle axes, giving the agent spatial awareness of track boundaries and nearby vehicles.
 - **Action Space:** Continuous lateral control (steering angle), paired with automatic cruise control handling longitudinal acceleration.
-- **Smooth Driving Reward Shaping (`SmoothRacerWrapper`):** Standard RL agents often exhibit high-frequency steering jitter. We implement a custom wrapper that penalizes steering jerk ($|\text{steering}_t - \text{steering}_{t-1}|$) to encourage fluid, natural racing trajectories.
+- **Smooth Driving Reward Shaping (`SmoothRacerWrapper`):** Standard RL agents often exhibit high-frequency steering jitter. We implement a custom wrapper that penalizes steering jerk (`|steering_t - steering_{t-1}|`) to encourage fluid, natural racing trajectories.
 - **Algorithms:** Supports both **Soft Actor-Critic (SAC)** (default, off-policy continuous control) and **Proximal Policy Optimization (PPO)**.
 - **Evaluation & Video Capture:** Seamless evaluation pipeline with `RecordVideo` wrapper to produce high-resolution MP4 recordings of trained agents.
 
