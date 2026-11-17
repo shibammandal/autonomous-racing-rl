@@ -4,15 +4,15 @@ An autonomous racing system built with **Gymnasium**, **Highway-Env**, and **Sta
 
 ---
 
-## Video
+## Demo Preview
 
-Watch the trained SAC agent race on the track:
+<p align="center">
+  <img src="videos/racer_demo.gif" alt="Autonomous Racing Agent Demo" width="600" />
+</p>
 
-- **Video File:** [autonomous_racer_sac-episode-0.mp4](videos/autonomous_racer_sac-episode-0.mp4)
+*Trained SAC agent navigating the track with dynamic traffic and smooth steering control.*
 
-<video src="videos/autonomous_racer_sac-episode-0.mp4" controls="controls" width="700">
-  Your browser does not support the video tag. You can view the video directly at <a href="videos/autonomous_racer_sac-episode-0.mp4">videos/autonomous_racer_sac-episode-0.mp4</a>.
-</video>
+- **Full Resolution MP4:** [autonomous_racer_sac-episode-0.mp4](videos/autonomous_racer_sac-episode-0.mp4)
 
 ---
 
@@ -39,8 +39,9 @@ autonomous-racing-rl/
 ├── evaluate_video.py    # Evaluation and video recording script
 ├── requirements.txt     # Python dependencies
 ├── .gitignore           # Git ignore rules for checkpoints, logs, and cache
-├── videos/              # Recorded evaluation runs (MP4)
-│   └── autonomous_racer_sac-episode-0.mp4
+├── videos/              # Recorded evaluation runs & visual previews
+│   ├── autonomous_racer_sac-episode-0.mp4
+│   └── racer_demo.gif
 ├── models/              # Saved model checkpoints (ignored by Git)
 └── logs/                # TensorBoard logs and evaluation stats (ignored by Git)
 ```
