@@ -12,7 +12,7 @@ An autonomous racing system built with **Gymnasium**, **Highway-Env**, and **Sta
 
 *Trained SAC agent navigating the track with dynamic traffic and smooth steering control.*
 
-- **Full Resolution MP4:** [autonomous_racer_sac-episode-0.mp4](videos/autonomous_racer_sac-episode-0.mp4)
+[autonomous_racer_sac-episode-0.mp4](videos/autonomous_racer_sac-episode-0.mp4)
 
 ---
 
